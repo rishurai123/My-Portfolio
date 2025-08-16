@@ -6,25 +6,41 @@ export default function Portfolio() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md z-50 border-b border-slate-200/50 dark:border-slate-700/50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          <div className="flex justify-between items-center h-16 sm:h-20">
+            <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
               Portfolio
             </div>
+            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-10">
               <a href="#about" className="text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium">About</a>
               <a href="#skills" className="text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium">Skills</a>
               <a href="#projects" className="text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium">Projects</a>
               <a href="#contact" className="text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium">Contact</a>
             </div>
+            {/* Mobile Menu Button */}
+            <button className="md:hidden p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          {/* Mobile Navigation */}
+          <div className="md:hidden py-4 border-t border-slate-200/50 dark:border-slate-700/50">
+            <div className="flex flex-col space-y-4">
+              <a href="#about" className="text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium py-2">About</a>
+              <a href="#skills" className="text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium py-2">Skills</a>
+              <a href="#projects" className="text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium py-2">Projects</a>
+              <a href="#contact" className="text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 font-medium py-2">Contact</a>
+            </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pt-24 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="mb-12">
-                         <div className="w-40 h-40 mx-auto mb-8 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-1 shadow-2xl">
+          <div className="mb-8 sm:mb-12">
+                         <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 sm:mb-8 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-1 shadow-2xl">
                <div className="w-full h-full rounded-full overflow-hidden">
                  <img 
                    src="/rishuimg1.jpg" 
@@ -33,22 +49,22 @@ export default function Portfolio() {
                  />
                </div>
              </div>
-            <h1 className="text-5xl sm:text-7xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-slate-900 dark:text-white mb-4 sm:mb-6 leading-tight">
               Hi, I am <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Shailendra Kumar Rai</span>
             </h1>
-            <p className="text-2xl sm:text-3xl text-slate-700 dark:text-slate-200 mb-10 font-light">
+            <p className="text-lg sm:text-2xl lg:text-3xl text-slate-700 dark:text-slate-200 mb-6 sm:mb-10 font-light">
               Python Full-Stack Developer & React.js Specialist
             </p>
-            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+            <p className="text-base sm:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4">
               I build modern web applications using Python backend with React.js frontend. 
               Expert in Next.js, Tailwind CSS, Node.js, and Express.js for creating 
               scalable and user-friendly solutions.
             </p>
-            <div className="flex justify-center space-x-6">
-              <a href="#contact" className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-10 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 px-4">
+              <a href="#contact" className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm sm:text-base">
                 Get In Touch
               </a>
-              <a href="#projects" className="border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-indigo-400 dark:hover:border-indigo-400 px-10 py-4 rounded-xl font-semibold transition-all duration-300">
+              <a href="#projects" className="border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-indigo-400 dark:hover:border-indigo-400 px-8 sm:px-10 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 text-sm sm:text-base">
                 View My Work
               </a>
             </div>
