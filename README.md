@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Portfolio
+
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎨 Modern and clean design
+- 📱 Fully responsive
+- ⚡ Fast performance with Next.js
+- 🎯 SEO optimized
+- 🌙 Light theme (dark mode ready)
+- 📊 Skills visualization with progress bars
+- 🚀 Project showcase with technology tags
+- 📧 Contact section with social links
+
+## Sections
+
+1. **Hero Section** - Introduction and call-to-action buttons
+2. **About Section** - Personal information and quick facts
+3. **Skills Section** - Technical skills with progress indicators
+4. **Projects Section** - Featured projects with descriptions
+5. **Contact Section** - Contact information and social links
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Customization
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Personal Information
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Update the following in `src/app/page.tsx`:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Name**: Replace "Your Name" with your actual name
+- **Title**: Update the job title in the hero section
+- **Description**: Modify the personal description
+- **Email**: Update the email address in the contact section
+- **LinkedIn**: Add your LinkedIn profile URL
+- **Social Links**: Update GitHub, Twitter, and other social media links
 
-## Learn More
+### Skills
 
-To learn more about Next.js, take a look at the following resources:
+Modify the skills section to reflect your actual skills:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Frontend Skills**: Update React, TypeScript, Tailwind CSS percentages
+2. **Backend Skills**: Update Node.js, Python, PostgreSQL percentages  
+3. **Tools**: Update Git, Docker, AWS percentages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Projects
 
-## Deploy on Vercel
+Replace the sample projects with your actual projects:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Project Title**: Update the project names
+2. **Description**: Write detailed descriptions of your projects
+3. **Technologies**: Update the technology tags
+4. **Links**: Add actual GitHub and live demo links
+5. **Images**: Replace emoji placeholders with actual project screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Styling
+
+The portfolio uses Tailwind CSS for styling. You can customize:
+
+- **Colors**: Modify the color scheme in the gradient backgrounds
+- **Fonts**: Update fonts in the layout.tsx file
+- **Layout**: Adjust spacing and grid layouts
+- **Animations**: Add hover effects and transitions
+
+## Technologies Used
+
+- **Next.js 15** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Icons** - Icon library
+
+## Deployment
+
+The portfolio is ready to be deployed on:
+
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **GitHub Pages**
+- Any static hosting service
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contributing
+
+Feel free to fork this project and customize it for your own portfolio!
